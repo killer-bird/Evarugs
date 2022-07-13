@@ -1,0 +1,38 @@
+.features-cart {
+    @media(min-width: 320px) {
+        max-width: 100%;
+        border-radius: 9px;
+        background: #fff;
+        box-shadow: 0px 0px 40px rgba(184, 0, 95, 0.2);
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 57px;
+        }
+        &__img {
+            width: 100%;
+            height: 150px;
+            border-radius: 9px 9px 0 0;
+        }
+        &__content {
+            padding: 20px;
+        }
+        &__title{
+            text-transform: uppercase;
+            margin: 0 0 20px 0;
+        }
+        &__text {
+            color: $font-second-color;
+            font-weight: $light;
+        }
+    }
+    @media(min-width: 500px) {
+        &__img{
+            height: 186px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        
+    }
+
+}

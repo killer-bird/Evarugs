@@ -1,0 +1,91 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+@import "./normalize.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./logo-nav.scss";
+@import "./order.scss";
+@import "./features.scss";
+@import "./features-cart.scss";
+@import "./reviews.scss";
+@import "./reviews-cart.scss";
+
+
+html {
+    font-size: $font-size;
+}
+
+body {
+    font-family: $main-font;
+    width: 100vw;
+    overflow-x: hidden;
+    span {
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    
+}
+main {
+    background: #ffff;
+}
+h4{
+    font-size: $font-size;
+    font-weight: $bold;
+
+}
+.phones {
+    a {
+        font-size: $font-size;
+    }
+}
+
+.btn {
+    background: $hard-gradient;
+    color: #ffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.container {
+    @media(min-width: 320px) {
+        margin: 0 auto;
+        padding: 0 15px;
+        max-width: 294px;
+        width: 100%;
+    }  
+    @media(min-width: 375px) {
+        max-width: 340px;
+    }
+    @media(min-width: 425px){
+        max-width: none;
+    }
+    @media(min-width: 768px) {
+        max-width: 725px;
+    }
+    @media(min-width: 800px) {
+        position: relative;
+    }
+}
+
+
+.title{
+    @media(min-width: 320px) {
+        font-size: 25px;
+        font-weight: $black;
+    }
+    @media(min-width: 425px) {
+        font-size: 30px;
+    }
+    @media(min-width: 700px) {
+        font-size: 40px;
+        margin-bottom: 31px;
+    }
+    
+}
+

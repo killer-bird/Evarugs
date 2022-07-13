@@ -1,0 +1,55 @@
+
+
+.logo-nav {
+    @media(min-width: 320px) {
+        display: flex;
+        justify-content: center;
+        padding: 26px 0 15px 0;
+        &__left{
+            height: 36px;
+            display: flex;
+            align-items: center;
+        }
+        &__logo {
+            margin-right: 9px;
+        }
+        &__title{
+            letter-spacing: 0.3px;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: $black;
+            text-transform: uppercase;
+        }
+        &__right {
+            display: none;
+        }
+    }
+    @media(min-width: 425px) {
+        &__title {
+            font-size: 25px;
+        }
+        &__logo img {
+            width: 80px;
+            height: 45px;
+        }
+    }
+    @media(min-width: 500px) {
+        &__title{
+            font-size: 30px;
+        }
+    }
+    @media(min-width: 700px) {
+        padding: 69px 0 0 0;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;
+        margin-bottom: -13px;
+        &__logo {
+            margin-right: 24px;
+            img {
+                width: 100px;
+                height: 60px;
+            }
+        }
+    }
+}

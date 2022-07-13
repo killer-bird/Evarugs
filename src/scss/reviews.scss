@@ -1,0 +1,9 @@
+.reviews {
+    padding: 97px 0 38px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__wrapper {
+        background: $light-gradient;
+    }
+}
