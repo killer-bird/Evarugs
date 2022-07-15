@@ -34,5 +34,14 @@
         }
         
     }
+    @media (min-width: 700px) {
+        margin-bottom: 60px;
+    }
+    
+    @media( min-width: 1024px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 
 }

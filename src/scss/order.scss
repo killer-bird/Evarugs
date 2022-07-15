@@ -19,6 +19,7 @@
         &__text {
             position: relative;
             z-index: 2;
+            font-weight: $light;
             font-size: 20px;
             margin-bottom: 9px;
         }
@@ -116,9 +117,7 @@
                 }
             }
         }
-        &__wrapper {
-            
-        }
+        
         &__left {
             padding-top: 60px;
             text-align: left;
@@ -146,6 +145,35 @@
             margin: 0;
             font-size: 15px;
             padding: 12px 0;
+        }
+    }
+    @media(min-width: 900px) {
+        &__text {
+            display: block;
+            margin-bottom: 24px;
+        }
+        &__link {
+            display: none;
+        }
+        &__wrapper {
+            padding-top: 50px;
+        }
+    }
+    @media(min-width: 1024px) {
+        &__btn {
+            max-width: 155px;
+        }
+        &-romb {
+            &-1 {
+                bottom: 35px;
+                left: 10px;
+            }
+        }
+    }
+    @media(min-width: 1400px) {
+        &__btn {
+            width: 100%;
+            max-width: 179px;
         }
     }
 }

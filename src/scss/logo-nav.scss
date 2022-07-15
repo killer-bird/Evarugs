@@ -52,4 +52,31 @@
             }
         }
     }
+
+    @media(min-width: 900px) {
+        &__right {
+            display: block;
+        }
+        &__list {
+            display: flex;
+            list-style: none;
+        }
+        &__item:not(:last-child) {
+            margin-right: 25px;
+        }
+        &__link {
+            font-size: 18px;
+            color: $gray-font;
+            font-weight: $light;
+            cursor: pointer;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    @media(min-width: 1440px) {
+        &__title {
+            font-size: 36px;
+        }
+    }
 }

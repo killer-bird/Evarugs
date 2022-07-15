@@ -77,5 +77,32 @@
             }
         }
     }
+    @media(min-width: 1024px) {
+        &__item {
+            flex: 1 1 auto;
+            &:last-child {
+                max-width: 150px;
+            }
+        }
+        &__phones {
+            visibility: inherit;
+            align-items: center;
+            &__icon {
+                display: block;
+                margin-right: 5px;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .header__link {
+                margin-right: 10px;
+            }
+        }
+        &__geo {
+            margin-right: 200px;
+            justify-content: flex-start;
+        }
+    }
 }
 

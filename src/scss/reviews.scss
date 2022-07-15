@@ -1,9 +1,32 @@
 .reviews {
-    padding: 97px 0 38px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__wrapper {
-        background: $light-gradient;
+    @media(min-width: 320px) {
+        padding: 97px 0 38px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__wrapper {
+            background: $light-gradient;
+        }
+    }
+    @media(min-width: 768px) {
+        &__wrapper {
+            margin-top: -55px;
+        }
+    }
+    @media(min-width: 1024px) {
+        display: none;
+        &__wrapper {
+            margin-top: 0;
+            padding: 98px 0 72px;
+            position: relative;
+            overflow-x: hidden;
+            .swiper-slide {
+                opacity: .5;
+            }
+            .swiper-slide-active {
+                opacity: 1;
+            }
+        }
+        
     }
 }
