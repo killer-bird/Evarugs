@@ -42,3 +42,30 @@ export function slider() {
     
     })
 }
+
+export function popup() {
+    const popup = document.querySelector('.popup')
+    const wrapper = document.querySelector('.popup__wrapper')
+    const btn = document.querySelector('.order__btn')
+    const form = document.querySelector('.popup__form')
+
+    btn.addEventListener('pointerdown', (e) => {
+        e.preventDefault()
+        wrapper.classList.add('popup__wrapper_active')
+        console.log(e.target);
+    })
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        console.log(123)
+        wrapper.classList.remove('popup__wrapper_active')
+    })
+
+    popup.addEventListener('pointerdown', function (e) {
+        if(e.target === e.currentTarget) {
+            wrapper.classList.remove('popup__wrapper_active')
+        }
+    })
+
+    
+}
