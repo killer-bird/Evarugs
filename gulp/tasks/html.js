@@ -10,7 +10,7 @@ export const html = ()=>{
             app.isBuild,
             webHtmlNosvg()
         ))
-        .pipe(app.plugins.replace(/\.\.img\//g, 'img/'))
+        .pipe(app.plugins.replace('../img', 'img'))
         .pipe(
             app.plugins.if(
                 app.isBuild,
