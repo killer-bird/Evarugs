@@ -52,18 +52,19 @@ export function popup() {
     btn.addEventListener('pointerdown', (e) => {
         e.preventDefault()
         wrapper.classList.add('popup__wrapper_active')
-        console.log(e.target);
+        document.body.style.overflow = 'hidden'
     })
 
     form.addEventListener('submit', (e) => {
         e.preventDefault()
-        console.log(123)
         wrapper.classList.remove('popup__wrapper_active')
+        document.body.style.overflow = 'auto'
     })
 
-    popup.addEventListener('pointerdown', function (e) {
-        if(e.target === e.currentTarget) {
+    wrapper.addEventListener('pointerdown', function (e) {
+        if(e.target === e.currentTarget || e.target === popup) {
             wrapper.classList.remove('popup__wrapper_active')
+            document.body.style.overflow = 'auto'
         }
     })
 
